@@ -44,13 +44,13 @@
       }
 
       function getMessages() {
-        jQuery.get('http://localhost:3000/messages', (data) => {
+        jQuery.get('https://chat-app-euq6.onrender.com/messages', (data) => {
           data.forEach(addMessages);
         });
       }
 
       function postMessage(message) {
-        jQuery.post('http://localhost:3000/messages', message);
+        jQuery.post('https://chat-app-euq6.onrender.com/messages', message);
         jQuery('#name').val('');
         jQuery('#message').val('');
       }
